@@ -4,12 +4,60 @@
   <title>eBOOKs</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/style.css"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/js/script.js"></script>
-</body>
-</html>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <body>
+    <div id="store">
+      <h1 data-food="burger">Nos Burgers</h1>
+      <section data-food="burger" class="row">
+        <article class="col s12 m6 l4" data-price="5">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://farm6.staticflickr.com/5545/9702624462_2efb4ab1d1_d.jpg" title="Flickr picture by Nic Taylor Photography">
+              <span class="card-title">5,00€</span>
+            </div>
+            <div class="card-content">
+              <h3>Burger</h3>
+              <p>
+                Ceci est la description du produit.
+              </p>
+            </div>
+            <div class="card-action row">
+              <a href="#" class="waves-effect waves-light btn red white-text col s12">Ajouter</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <h1 data-food="dessert">Nos Desserts</h1>
+      <section data-food="dessert" class="row">
+        <article class="col s12 m6 l4" data-price="10">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://farm3.staticflickr.com/2403/2127291233_899c16de27_d.jpg" title="Flickr picture by sea turtle">
+              <span class="card-title">10,00€</span>
+            </div>
+            <div class="card-content">
+              <h3>Glace</h3>
+              <p>
+                Ceci est la description du produit.
+              </p>
+            </div>
+            <div class="card-action row">
+              <a href="#" class="waves-effect waves-light btn red white-text col s12">Ajouter</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div id="cart" class="row">
+      <ul>
+      </ul>
+      <a id="pay" class="waves-effect waves-light orange white-text" >Payer <span class="total">0.00</span>€</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.2/js/materialize.min.jss"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+  </body>
+  </html>
