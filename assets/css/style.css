@@ -4,3 +4,9 @@ body {
 .card {
   height: 100%;
 }
+#size {
+  height: 500px;
+}
+section {
+  margin-top: 150px;
+}
