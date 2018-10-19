@@ -10,3 +10,8 @@ body {
 section {
   margin-top: 150px;
 }
+footer {
+  height: 150px;
+  background: black;
+  width: 100%;
+}
