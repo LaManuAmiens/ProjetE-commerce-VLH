@@ -34,10 +34,9 @@ $('#shoppingCart').on('click', '.removeItem', function(){
   if (itemCount == 0) {
     $('#itemCount').css('display', 'none');
   }
-<<<<<<< HEAD
 });
-=======
-});
+
+// Button Up
 
 window.onscroll = function() {scrollFunction()};
 
@@ -53,4 +52,3 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
->>>>>>> c2e75fa630cbdd5cb5f335bb8c6c94f67e506810
