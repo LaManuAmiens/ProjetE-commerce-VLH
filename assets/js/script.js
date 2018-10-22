@@ -34,4 +34,23 @@ $('#shoppingCart').on('click', '.removeItem', function(){
   if (itemCount == 0) {
     $('#itemCount').css('display', 'none');
   }
+<<<<<<< HEAD
 });
+=======
+});
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+>>>>>>> c2e75fa630cbdd5cb5f335bb8c6c94f67e506810
