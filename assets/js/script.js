@@ -19,15 +19,15 @@ $('.openCloseCart').click(function(){
   $('#shoppingCart').toggle();
 });
 
-// Vider le panier
-$('#emptyCart').click(function() {
-  itemCount = 0;
-  priceTotal = 0;
-
-  $('#itemCount').css('display', 'none');
-  $('#cartItems').text('');
-  $('#cartTotal').text("Total: £" + priceTotal);
-});
+// // Vider le panier
+// $('#emptyCart').click(function() {
+//   itemCount = 0;
+//   priceTotal = 0;
+//
+//   $('#itemCount').css('display', 'none');
+//   $('#cartItems').text('');
+//   $('#cartTotal').text("Total: £" + priceTotal);
+// });
 
 // Supprimer articles depuis le panier
 $('#shoppingCart').on('click', '.removeItem', function(){
