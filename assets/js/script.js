@@ -6,6 +6,7 @@ $('.add').click(function (){
   itemCount ++;
 
   $('#itemCount').text(itemCount).css('display', 'block');
+  // La méthode .siblings() retourne tous les éléments frères de l'élément sélectionné.
   $(this).siblings().clone().appendTo('#cartItems').append('<button class="removeItem">Supprimer Articles</button>');
 
   // Calcul prix total
