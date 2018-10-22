@@ -1,51 +1,44 @@
 var itemCount = 0;
 var priceTotal = 0;
 
-
-
-// Add Item to Cart
+// Ajout d'articles au panier
 $('.add').click(function (){
   itemCount ++;
 
   $('#itemCount').text(itemCount).css('display', 'block');
-  $(this).siblings().clone().appendTo('#cartItems').append('<button class="removeItem">Remove Item</button>');
+  $(this).siblings().clone().appendTo('#cartItems').append('<button class="removeItem">Supprimer Articles</button>');
 
-  // Calculate Total Price
+  // Calcul prix total
   var price = parseInt($(this).siblings().find('.price').text());
   priceTotal += price;
-  $('#cartTotal').text("Total: €" + priceTotal);
+  $('#cartTotal').text("Total: £" + priceTotal);
 });
 
-
-
-// Hide and Show Cart Items
+// Cacher et afficher les articles du panier
 $('.openCloseCart').click(function(){
   $('#shoppingCart').toggle();
 });
 
-
-// Empty Cart
+// Vider le panier
 $('#emptyCart').click(function() {
   itemCount = 0;
   priceTotal = 0;
 
   $('#itemCount').css('display', 'none');
   $('#cartItems').text('');
-  $('#cartTotal').text("Total: €" + priceTotal);
+  $('#cartTotal').text("Total: £" + priceTotal);
 });
 
-
-
-// Remove Item From Cart
+// Supprimer articles depuis le panier
 $('#shoppingCart').on('click', '.removeItem', function(){
   $(this).parent().remove();
   itemCount --;
   $('#itemCount').text(itemCount);
 
-  // Remove Cost of Deleted Item from Total Price
+  // Supprimer le prix d'un article du prix total
   var price = parseInt($(this).siblings().find('.price').text());
   priceTotal -= price;
-  $('#cartTotal').text("Total: €" + priceTotal);
+  $('#cartTotal').text("Total: £" + priceTotal);
 
   if (itemCount == 0) {
     $('#itemCount').css('display', 'none');

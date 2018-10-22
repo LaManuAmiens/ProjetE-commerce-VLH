@@ -1,105 +1,44 @@
-body {
-  padding-top: 54px;
+/* General */
+
+#emptyCart {
+
+}
+.container-fluid{
+  padding: 0;
+}
+.navbar{
+  position: fixed;
 }
 .card {
   height: 100%;
 }
 #size {
-  height: 500px;
+  height: 700px;
+  padding: 10%;
 }
 section {
-  margin-top: 150px;
-}
-main {
-  padding: 100px 0;
-  width: 700px;
-  margin: 0 auto;
+  margin-top: 200px;
 }
 
-header {
-  height: 100px;
-}
+/* Panier */
 
-h1 {
-  float: left;
-  margin: 0;
-}
-
-h2 {
-  margin: 0 0 50px;
-}
-
-#cart-container {
-  float: right;
-  width: 210px;
-  position: relative;
-}
-
-#itemCount {
-  position: absolute;
-  display: none;
-  top: -10px;
-  left: -10px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: red;
-  color: white;
-  text-align: center;
-}
-
-nav {
-  margin-bottom: 30px;
-}
-
-nav ul {
-  list-style: none;
-  overflow: auto;
-  width: 100%;
-  background: #444444;
-}
-
-nav ul li {
-  float: left;
-  padding: 5px 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav ul li:hover {
-  color: #444444;
-  background: #cccccc;
-}
-
-nav ul li:hover a {
-  color: #444444;
-}
-
-img {
-  width: 100%;
-}
-
-.item {
-  width: 31%;
-  float: left;
-  margin: 1%;
-}
-
-.itemText p {
-  margin-bottom: 20px;
+.removeItem {
+  margin-left: 40px;
 }
 
 .price-container {
   margin-top: 20px;
 }
 
-i:hover {
-  cursor: pointer;
-}
+/* Logo panier d'achat */
 
+#cart-container {
+  margin-top: 1%;
+  float: right;
+  width: 200px;
+  position: relative;
+  height: 50px;
+}
 #shoppingCart {
   top: 0;
   left: 0;
@@ -110,6 +49,19 @@ i:hover {
   z-index: 9999;
   background: rgba(0, 0, 0, 0.6);
 }
+#itemCount {
+  position: absolute;
+  display: none;
+  top: -10px;
+  right: 130px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  text-align: center;
+}
+/* Fenêtre modale */
 
 #cartItemsContainer {
   position: relative;
@@ -121,6 +73,10 @@ i:hover {
   box-shadow: 0 0 10px black;
   background: #e9e9e9;
   overflow: auto;
+}
+
+#cartItemsContainer img {
+  height: 300px;
 }
 
 #cartItemsContainer i {
@@ -149,8 +105,4 @@ i:hover {
 
 #cartItemsContainer .itemText .price-container {
   margin-top: 0;
-}
-
-.removeItem {
-  margin-left: 40px;
 }
