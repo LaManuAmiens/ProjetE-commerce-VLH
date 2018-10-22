@@ -1,3 +1,103 @@
+/* responsive design */
+
+@media all and (max-width: 600px){
+  #shoppingCart {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+  #cartItemsContainer {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    box-shadow: 0 0 10px black;
+    background: #e9e9e9;
+    overflow: auto;
+  }
+  #cartItemsContainer img {
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #cartItemsContainer i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #cartItemsContainer h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  #cartItemsContainer p {
+    font-size: 15px;
+  }
+  #cartItemsContainer .itemDetails {
+    width: 100%;
+  }
+  #cartItemsContainer .itemImage {
+    width: 100%;
+  }
+  #cartItemsContainer .itemText {
+    float: right;
+    width: 260px;
+  }
+  #cartItemsContainer .itemText .price-container {
+    margin-top: 0;
+  }
+}
+@media all and (min-width: 600px){
+  #shoppingCart {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+  }
+  #cartItemsContainer {
+    position: relative;
+    width: 600px;
+    left: 50%;
+    top: 150px;
+    margin-left: -300px;
+    padding: 40px;
+    box-shadow: 0 0 10px black;
+    background: #e9e9e9;
+    overflow: auto;
+  }
+  #cartItemsContainer img {
+    height: 300px;
+  }
+  #cartItemsContainer i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #cartItemsContainer .itemDetails {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  #cartItemsContainer .itemImage {
+    float: left;
+    width: 260px;
+    padding: 0 40px;
+  }
+  #cartItemsContainer .itemText {
+    float: right;
+    width: 260px;
+    padding: 0 40px;
+  }
+  #cartItemsContainer .itemText .price-container {
+    margin-top: 0;
+  }
+}
+
 /* General */
 body {
   overflow-x: hidden;
@@ -49,58 +149,4 @@ section {
   background: red;
   color: white;
   text-align: center;
-}
-/* Fenêtre modale */
-
-#shoppingCart {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  background: rgba(0, 0, 0, 0.6);
-  overflow: auto;
-}
-#cartItemsContainer {
-  position: relative;
-  width: 600px;
-  left: 50%;
-  top: 150px;
-  margin-left: -300px;
-  padding: 40px;
-  box-shadow: 0 0 10px black;
-  background: #e9e9e9;
-  overflow: auto;
-}
-
-#cartItemsContainer img {
-  height: 300px;
-}
-
-#cartItemsContainer i {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-#cartItemsContainer .itemDetails {
-  overflow: auto;
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-#cartItemsContainer .itemImage {
-  float: left;
-  width: 260px;
-  padding: 0 40px;
-}
-
-#cartItemsContainer .itemText {
-  float: right;
-  width: 260px;
-  padding: 0 40px;
-}
-
-#cartItemsContainer .itemText .price-container {
-  margin-top: 0;
 }
